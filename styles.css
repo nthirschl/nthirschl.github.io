@@ -1,0 +1,350 @@
+/* ==========================================
+   MINIMAL TYPOGRAPHY-FOCUSED STYLESHEET
+   For Statistical Consultant Website
+   ========================================== */
+
+/* ==========================================
+   BASE STYLES & TYPOGRAPHY
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', 'Georgia', 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Sidebar - Fixed position */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    padding: 80px 50px;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Main content area - Scrollable */
+.main-content {
+    margin-left: 400px;
+    max-width: 750px;
+    padding: 80px 60px 120px 80px;
+    flex: 1;
+}
+
+/* ==========================================
+   SIDEBAR ELEMENTS
+   ========================================== */
+
+.sidebar .headshot {
+    width: 260px;
+    height: auto;
+    margin-bottom: 1.5em;
+    border-radius: 2px;
+}
+
+.sidebar h1 {
+    font-size: 1.65em;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    padding-bottom: 0;
+    border-bottom: none;
+    white-space: nowrap;
+}
+
+.sidebar-nav {
+    margin-top: 2em;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.sidebar-nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.sidebar-nav a:hover {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.sidebar-nav .current-page {
+    color: #666;
+    font-style: italic;
+}
+
+/* ==========================================
+   TYPOGRAPHY HIERARCHY
+   ========================================== */
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.4em;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    letter-spacing: 0.01em;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+/* ==========================================
+   SECTIONS
+   ========================================== */
+
+.intro {
+    margin-bottom: 3em;
+    font-size: 1.05em;
+}
+
+.about {
+    margin-bottom: 3em;
+}
+
+.consulting-services {
+    margin-bottom: 3em;
+}
+
+.consulting-services h2 {
+    margin-top: 0;
+}
+
+.services {
+    margin-bottom: 3em;
+}
+
+.services ul {
+    list-style-position: outside;
+    margin-left: 1.5em;
+}
+
+.services li {
+    margin-bottom: 0.6em;
+    padding-left: 0.3em;
+}
+
+/* ==========================================
+   CONTACT FORM
+   ========================================== */
+
+.contact {
+    margin-top: 4em;
+    padding-top: 2em;
+    border-top: 1px solid #e0e0e0;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+label {
+    display: block;
+    font-size: 0.95em;
+    font-weight: 500;
+    margin-bottom: 0.4em;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.7em;
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    border: 1px solid #d0d0d0;
+    background-color: #fafafa;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #333;
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+button[type="submit"] {
+    padding: 0.8em 2em;
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: #1a1a1a;
+    background-color: #f5f5f5;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e8e8e8;
+    border-color: #333;
+}
+
+/* ==========================================
+   CV PAGE STYLES
+   ========================================== */
+
+.cv-subtitle {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #666;
+    margin-top: -0.3em;
+}
+
+.cv-section {
+    margin-bottom: 3em;
+}
+
+.cv-entry {
+    margin-bottom: 1.8em;
+}
+
+.cv-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3em;
+}
+
+.cv-entry-header strong {
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.cv-date {
+    font-size: 0.95em;
+    color: #666;
+    font-style: italic;
+}
+
+.cv-entry p {
+    margin-bottom: 0.5em;
+    color: #444;
+}
+
+/* Client list styling */
+.client-list {
+    list-style: none;
+    margin-left: 0;
+    columns: 2;
+    column-gap: 2em;
+}
+
+.client-list li {
+    margin-bottom: 0.5em;
+    break-inside: avoid;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        font-size: 17px;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 50px 30px 30px;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sidebar .headshot {
+        width: 140px;
+    }
+
+    .sidebar h1 {
+        font-size: 1.8em;
+    }
+
+    .sidebar-nav {
+        margin-top: 1.5em;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 50px 30px 80px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .client-list {
+        columns: 1;
+    }
+
+    .cv-entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cv-date {
+        margin-top: 0.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .sidebar {
+        padding: 40px 20px 25px;
+    }
+
+    .sidebar h1 {
+        font-size: 1.6em;
+    }
+
+    .main-content {
+        padding: 40px 20px 60px;
+    }
+
+    .intro {
+        font-size: 1em;
+    }
+}
