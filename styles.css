@@ -85,8 +85,16 @@ body {
     border-bottom: 1px solid #4a6fa5;
 }
 
+.sidebar-divider {
+    width: 10em;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 1.5em 0;
+    align-self: flex-start;
+}
+
 .sidebar-nav {
-    margin-top: 2em;
+    margin-top: 0;
     font-size: 16px;
     display: flex;
     flex-direction: column;
