@@ -257,6 +257,17 @@ button[type="submit"]:hover {
     color: #444;
 }
 
+.cv-subpoints {
+    list-style: none;
+    margin: 0.3em 0 0 0;
+    padding: 0;
+}
+
+.cv-subpoints li {
+    margin-bottom: 0.3em;
+    color: #444;
+}
+
 /* Client list styling */
 .client-list {
     list-style: none;
