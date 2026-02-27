@@ -75,14 +75,14 @@ body {
 }
 
 .sidebar-links a {
-    color: #666;
+    color: #4a6fa5;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s ease;
 }
 
 .sidebar-links a:hover {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #4a6fa5;
 }
 
 .sidebar-nav {
